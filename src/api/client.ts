@@ -7,7 +7,7 @@ import type {
   ChatHistoryResponse,
 } from './types';
 
-const BASE = '/api';
+const BASE = 'https://openclaw-getway-server.vercel.app/api';
 
 async function request<T>(path: string, options?: RequestInit): Promise<T> {
   const headers: Record<string, string> = {};
